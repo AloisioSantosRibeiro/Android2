@@ -1,13 +1,13 @@
 package android.v2;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
+import android.support.v7.app.ActionBarActivity;
 
-public class MainActivity extends Activity {
+public class MainActivity extends ActionBarActivity {
 
 	public final static String EXTRA_MESSAGE = "v2.android2.MESSAGE";
 	
