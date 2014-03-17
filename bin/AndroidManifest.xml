@@ -30,6 +30,46 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="android.v2.MainActivity" />
         </activity>
+        <activity
+            android:name="android.v2.ThemeDarkActivity"
+            android:label="@string/title_activity_theme_dark"
+            android:parentActivityName="android.v2.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.v2.MainActivity" />
+        </activity>
+        <activity
+            android:name="android.v2.ThemeLightActivity"
+            android:label="@string/title_activity_theme_light"
+            android:parentActivityName="android.v2.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.v2.MainActivity" />
+        </activity>
+        <activity
+            android:name="android.v2.ThemeDarkLightActivity"
+            android:label="@string/title_activity_theme_dark_light"
+            android:parentActivityName="android.v2.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.v2.MainActivity" />
+        </activity>
+        <activity
+            android:name="android.v2.ThemeColorActivity"
+            android:label="@string/title_activity_theme_color"
+            android:parentActivityName="android.v2.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.v2.MainActivity" />
+        </activity>
+        <activity
+            android:name="android.v2.ThemeImageActivity"
+            android:label="@string/title_activity_theme_image"
+            android:parentActivityName="android.v2.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.v2.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
