@@ -68,6 +68,7 @@
         <activity
             android:name="android.v2.ThemeImageActivity"
             android:label="@string/title_activity_theme_image"
+            android:theme="@style/CustomActionBarTheme"
             android:parentActivityName="android.v2.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

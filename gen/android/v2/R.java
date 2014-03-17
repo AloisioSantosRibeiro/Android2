@@ -1183,9 +1183,10 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int ic_action_dark_help=0x7f020057;
-        public static final int ic_action_light_help=0x7f020058;
-        public static final int ic_launcher=0x7f020059;
+        public static final int actionbar_background=0x7f020057;
+        public static final int ic_action_dark_help=0x7f020058;
+        public static final int ic_action_light_help=0x7f020059;
+        public static final int ic_launcher=0x7f02005a;
     }
     public static final class id {
         public static final int action_ThemeColor=0x7f050052;
@@ -1402,6 +1403,9 @@ containing a value of this type.
         public static final int title_activity_theme_light=0x7f0a001b;
     }
     public static final class style {
+        /**  ActionBar styles 
+         */
+        public static final int ActionBarImage=0x7f0b0086;
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
@@ -1428,6 +1432,9 @@ containing a value of this type.
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f0b0084;
+        /**  the theme applied to the application or activity 
+         */
+        public static final int CustomActionBarTheme=0x7f0b0085;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f0b0063;
