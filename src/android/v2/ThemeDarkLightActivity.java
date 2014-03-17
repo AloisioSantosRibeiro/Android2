@@ -31,7 +31,7 @@ public class ThemeDarkLightActivity extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.theme_dark_light, menu);
+		getMenuInflater().inflate(R.menu.menu_theme_dark_light, menu);
 		return true;
 	}
 

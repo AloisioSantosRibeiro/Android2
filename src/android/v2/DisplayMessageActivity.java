@@ -38,8 +38,13 @@ public class DisplayMessageActivity extends ActionBarActivity {
 	 */
 	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 	private void setupActionBar() {
+		
+		// If minSdkVersion is 11 or Higher
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
 			getActionBar().setDisplayHomeAsUpEnabled(true);
+		}
+		else {
+			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		}
 	}
 

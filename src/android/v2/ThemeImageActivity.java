@@ -31,7 +31,7 @@ public class ThemeImageActivity extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.theme_image, menu);
+		getMenuInflater().inflate(R.menu.menu_theme_image, menu);
 		return true;
 	}
 

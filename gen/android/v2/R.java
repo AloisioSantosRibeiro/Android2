@@ -1335,11 +1335,11 @@ containing a value of this type.
     public static final class menu {
         public static final int menu_display_message=0x7f0c0000;
         public static final int menu_main=0x7f0c0001;
-        public static final int theme_color=0x7f0c0002;
-        public static final int theme_dark=0x7f0c0003;
-        public static final int theme_dark_light=0x7f0c0004;
-        public static final int theme_image=0x7f0c0005;
-        public static final int theme_light=0x7f0c0006;
+        public static final int menu_theme_color=0x7f0c0002;
+        public static final int menu_theme_dark=0x7f0c0003;
+        public static final int menu_theme_dark_light=0x7f0c0004;
+        public static final int menu_theme_image=0x7f0c0005;
+        public static final int menu_theme_light=0x7f0c0006;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
