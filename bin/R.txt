@@ -260,7 +260,6 @@ int id action_help 0x7f05004e
 int id action_menu_divider 0x7f050027
 int id action_menu_presenter 0x7f050028
 int id action_mode_close_button 0x7f050035
-int id action_settings 0x7f050054
 int id activity_chooser_view_content 0x7f050036
 int id alignBounds 0x7f050002
 int id alignMargins 0x7f050003

@@ -1206,7 +1206,6 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050027;
         public static final int action_menu_presenter=0x7f050028;
         public static final int action_mode_close_button=0x7f050035;
-        public static final int action_settings=0x7f050054;
         public static final int activity_chooser_view_content=0x7f050036;
         public static final int alignBounds=0x7f050002;
         public static final int alignMargins=0x7f050003;

@@ -3,7 +3,7 @@
     <!-- the theme applied to the application or activity -->
     <style name="CustomActionBarTheme"
            parent="@style/Theme.AppCompat.Light">
-        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarStyle">@style/ActionBarImage</item>
 
         <!-- Support library compatibility -->
         <item name="actionBarStyle">@style/ActionBarImage</item>
