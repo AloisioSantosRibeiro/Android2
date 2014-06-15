@@ -42,9 +42,11 @@ public class DisplayMessageActivity extends ActionBarActivity {
 		// If minSdkVersion is 11 or Higher
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
 			getActionBar().setDisplayHomeAsUpEnabled(true);
+			getActionBar().hide();
 		}
 		else {
 			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+			getSupportActionBar().hide();
 		}
 	}
 
@@ -59,63 +61,37 @@ public class DisplayMessageActivity extends ActionBarActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle presses on the action bar items
 		switch (item.getItemId()) {
-		case android.R.id.home:
-			// This ID represents the Home or Up button. In the case of this
-			// activity, the Up button is shown. Use NavUtils to allow users
-			// to navigate up one level in the application structure. For
-			// more details, see the Navigation pattern on Android Design:
-			//
-			// http://developer.android.com/design/patterns/navigation.html#up-vs-back
-			//
-			NavUtils.navigateUpFromSameTask(this);
-			return true;
-		case R.id.action_help:
-			// fOpenHelp();
-			return true;
-		case R.id.action_ThemeDark:
-			fOpenDarkThemeActivity();
-			return true;
-		case R.id.action_ThemeLight:
-			fOpenLightThemeActivity();
-			return true;
-		case R.id.action_ThemeDarkLight:
-			fOpenDarkLightThemeActivity();
-			return true;
-		case R.id.action_ThemeColor:
-			fOpenColorThemeActivity();
-			return true;
-		case R.id.action_ThemeImage:
-			fOpenImageThemeActivity();
-			return true;
-		default:
-			return super.onOptionsItemSelected(item);
+			case android.R.id.home:
+				// This ID represents the Home or Up button. In the case of this
+				// activity, the Up button is shown. Use NavUtils to allow users
+				// to navigate up one level in the application structure. For
+				// more details, see the Navigation pattern on Android Design:
+				//
+				// http://developer.android.com/design/patterns/navigation.html#up-vs-back
+				//
+				NavUtils.navigateUpFromSameTask(this);
+				return true;
+			case R.id.action_help:
+				// fOpenHelp();
+				return true;
+			case R.id.action_ThemeDark:
+				tools.MenuFunctions.fOpenDarkThemeActivity(this);
+				return true;
+			case R.id.action_ThemeLight:
+				tools.MenuFunctions.fOpenLightThemeActivity(this);
+				return true;
+			case R.id.action_ThemeDarkLight:
+				tools.MenuFunctions.fOpenDarkLightThemeActivity(this);
+				return true;
+			case R.id.action_ThemeColor:
+				tools.MenuFunctions.fOpenColorThemeActivity(this);
+				return true;
+			case R.id.action_ThemeImage:
+				tools.MenuFunctions.fOpenImageThemeActivity(this);
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
 		}
-	}
-
-	public void fOpenDarkThemeActivity() {
-		System.out.println("calling DarkThemeActivity");
-		Intent intent = new Intent(this, ThemeDarkActivity.class);
-		startActivity(intent);
-	}
-	
-	public void fOpenLightThemeActivity() {
-		Intent intent = new Intent(this, ThemeLightActivity.class);
-		startActivity(intent);
-	}
-	
-	public void fOpenDarkLightThemeActivity() {
-		Intent intent = new Intent(this, ThemeDarkLightActivity.class);
-		startActivity(intent);
-	}
-	
-	public void fOpenColorThemeActivity() {
-		Intent intent = new Intent(this, ThemeColorActivity.class);
-		startActivity(intent);
-	}
-	
-	public void fOpenImageThemeActivity() {
-		Intent intent = new Intent(this, ThemeImageActivity.class);
-		startActivity(intent);
 	}
 
 }

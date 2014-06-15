@@ -43,55 +43,25 @@ public class MainActivity extends ActionBarActivity {
 //    			fOpenHelp();
     			return true;
     		case R.id.action_ThemeDark:
-    			fOpenDarkThemeActivity();
+    			tools.MenuFunctions.fOpenDarkThemeActivity(this);
     			return true;
     		case R.id.action_ThemeLight:
-    			fOpenLightThemeActivity();
+    			tools.MenuFunctions.fOpenLightThemeActivity(this);
     			return true;
     		case R.id.action_ThemeDarkLight:
-    			fOpenDarkLightThemeActivity();
+    			tools.MenuFunctions.fOpenDarkLightThemeActivity(this);
     			return true;
     		case R.id.action_ThemeColor:
-    			fOpenColorThemeActivity();
+    			tools.MenuFunctions.fOpenColorThemeActivity(this);
     			return true;
     		case R.id.action_ThemeImage:
-    			fOpenImageThemeActivity();
+    			tools.MenuFunctions.fOpenImageThemeActivity(this);
     			return true;
     		default:
     			return super.onOptionsItemSelected(item);
     	}
     }
 
-    
-    public void fOpenDarkThemeActivity() {
-    	Intent intent = new Intent(this, ThemeDarkActivity.class);
-    	startActivity(intent);
-    }
-    
-    
-    public void fOpenLightThemeActivity() {
-    	Intent intent = new Intent(this, ThemeLightActivity.class);
-    	startActivity(intent);
-    }
-    
-    
-    public void fOpenDarkLightThemeActivity() {
-    	Intent intent = new Intent(this, ThemeDarkLightActivity.class);
-    	startActivity(intent);
-    }
-    
-    
-    public void fOpenColorThemeActivity() {
-    	Intent intent = new Intent(this, ThemeColorActivity.class);
-    	startActivity(intent);
-    }
-    
-    
-    public void fOpenImageThemeActivity() {
-    	Intent intent = new Intent(this, ThemeImageActivity.class);
-    	startActivity(intent);
-    }
-    
     
     /** Called when the user presses the Send button */
     public void sendMessage(View view) {
