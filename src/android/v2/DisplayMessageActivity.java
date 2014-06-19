@@ -42,11 +42,9 @@ public class DisplayMessageActivity extends ActionBarActivity {
 		// If minSdkVersion is 11 or Higher
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
 			getActionBar().setDisplayHomeAsUpEnabled(true);
-			getActionBar().hide();
 		}
 		else {
 			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-			getSupportActionBar().hide();
 		}
 	}
 
