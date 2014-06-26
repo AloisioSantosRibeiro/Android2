@@ -60,6 +60,7 @@
         <activity
             android:name="android.v2.ThemeColorActivity"
             android:label="@string/title_activity_theme_color"
+            android:theme="@style/CustomActionBarTheme2"
             android:parentActivityName="android.v2.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
