@@ -11,6 +11,8 @@
     <string name="hello_android">Hello Android2!</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
+    <string name="button_hideActionBar">Hide ActionBar</string>
+    <string name="button_showActionBar">Show ActionBar</string>
     <string name="title_activity_display_message">Display Message</string>
     <string name="title_activity_theme_dark">Dark Theme</string>
     <string name="action_settings">Settings</string>

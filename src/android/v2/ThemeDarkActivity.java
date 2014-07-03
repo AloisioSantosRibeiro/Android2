@@ -7,6 +7,7 @@ import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class ThemeDarkActivity extends ActionBarActivity {
 
@@ -72,4 +73,23 @@ public class ThemeDarkActivity extends ActionBarActivity {
 //		return super.onOptionsItemSelected(item);
 	}
 
+	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
+	public void fHideActionBar(View button_hideActionBar) {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+			getActionBar().hide();
+		}
+		else {
+			getSupportActionBar().hide();
+		}
+	}
+	
+	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
+	public void fShowActionBar(View button_showActionBar) {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+			getActionBar().show();
+		}
+		else {
+			getSupportActionBar().show();
+		}
+	}
 }
