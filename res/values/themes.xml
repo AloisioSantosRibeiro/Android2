@@ -62,5 +62,20 @@
 			<item name="android:textColor">#00FF00</item>
         <!-- The textColor property is backward compatible with the Support Library -->
     </style>
+
+    
+    
+    
+    
+    
+    <!-- the 3rd theme applied to the application or activity -->
+    <!-- the theme applied to the application or activity -->
+    <style name="CustomActionBarThemeOverlay"
+           parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+    </style>
     
 </resources>

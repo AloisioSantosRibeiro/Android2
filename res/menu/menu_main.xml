@@ -38,4 +38,10 @@
         android2:showAsAction="never"
         android:title="@string/action_ThemeImage" />
     
+    <item
+        android:id="@+id/action_ThemeOverlayActionBar"
+        android:orderInCategory="100"
+        android2:showAsAction="never"
+        android:title="@string/action_ThemeOverlayActionBar" />
+    
 </menu>

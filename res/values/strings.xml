@@ -8,18 +8,20 @@
     <string name="action_ThemeDarkLight">Dark/Light</string>
     <string name="action_ThemeColor">Color</string>
     <string name="action_ThemeImage">Image</string>
+    <string name="action_ThemeOverlayActionBar">Overlay</string>
+    <string name="action_settings">Settings</string>
     <string name="hello_android">Hello Android2!</string>
+    <string name="hello_world">Hello world!</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
     <string name="button_hideActionBar">Hide ActionBar</string>
     <string name="button_showActionBar">Show ActionBar</string>
     <string name="title_activity_display_message">Display Message</string>
     <string name="title_activity_theme_dark">Dark Theme</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_theme_light">Light Theme</string>
     <string name="title_activity_theme_dark_light">Dark / Light Theme</string>
     <string name="title_activity_theme_color">Color Theme</string>
     <string name="title_activity_theme_image">Image Theme</string>
+    <string name="title_activity_theme_overlay_action_bar">ThemeOverlayActionBarActivity</string>
 
 </resources>
