@@ -7,6 +7,7 @@ import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class ThemeDarkLightActivity extends ActionBarActivity {
 
@@ -51,25 +52,35 @@ public class ThemeDarkLightActivity extends ActionBarActivity {
 				//
 				NavUtils.navigateUpFromSameTask(this);
 				return true;
-	    	case R.id.action_ThemeDark:
-	    		tools.MenuFunctions.fOpenDarkThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemeLight:
-	    		tools.MenuFunctions.fOpenLightThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemeDarkLight:
+	    	case R.id.action_ThemesAndroid:
 	    		tools.MenuFunctions.fOpenDarkLightThemeActivity(this);
 	    		return true;
-	    	case R.id.action_ThemeColor:
-	    		tools.MenuFunctions.fOpenColorThemeActivity(this);
+	    	case R.id.action_ThemesColoredTitles:
+	    		//tools.MenuFunctions.fOpenThemeColoredTitlesActivity(this);
 	    		return true;
-	    	case R.id.action_ThemeImage:
-	    		tools.MenuFunctions.fOpenImageThemeActivity(this);
+	    	case R.id.action_ThemesImage:
+	    		//tools.MenuFunctions.fOpenThemeImageActivity(this);
+	    		return true;
+	    	case R.id.action_ThemesHideActionBar:
+	    		//tools.MenuFunctions.fOpenThemeHideActionBarActivity(this);
+	    		return true;
+	    	case R.id.action_ThemesOverlayActionBar:
+	    		tools.MenuFunctions.fOpenOverlayActionBarThemeActivity(this);
 	    		return true;
 	    	default:
 	    		return super.onOptionsItemSelected(item);
 		}
 //		return super.onOptionsItemSelected(item);
+	}
+
+
+	public void fOpenLightThemeActivity(View view) {
+		tools.MenuFunctions.fOpenLightThemeActivity(this);
+	}
+
+	
+	public void fOpenDarkThemeActivity(View view) {
+		tools.MenuFunctions.fOpenDarkThemeActivity(this);
 	}
 
 }

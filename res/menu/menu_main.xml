@@ -9,39 +9,33 @@
         android:title="@string/action_help" />
 
     <item
-        android:id="@+id/action_ThemeDark"
+        android:id="@+id/action_ThemesAndroid"
         android:orderInCategory="100"
         android2:showAsAction="never"
-        android:title="@string/action_ThemeDark" />
+        android:title="@string/androidThemes" />
     
     <item
-        android:id="@+id/action_ThemeLight"
+        android:id="@+id/action_ThemesColoredTitles"
         android:orderInCategory="100"
         android2:showAsAction="never"
-        android:title="@string/action_ThemeLight" />
+        android:title="@string/coloredTitles" />
     
     <item
-        android:id="@+id/action_ThemeDarkLight"
+        android:id="@+id/action_ThemesImage"
         android:orderInCategory="100"
         android2:showAsAction="never"
-        android:title="@string/action_ThemeDarkLight" />
+        android:title="@string/imageThemes" />
     
     <item
-        android:id="@+id/action_ThemeColor"
+        android:id="@+id/action_ThemesHideActionBar"
         android:orderInCategory="100"
         android2:showAsAction="never"
-        android:title="@string/action_ThemeColor" />
+        android:title="@string/hideActionBar" />
     
     <item
-        android:id="@+id/action_ThemeImage"
+        android:id="@+id/action_ThemesOverlayActionBar"
         android:orderInCategory="100"
         android2:showAsAction="never"
-        android:title="@string/action_ThemeImage" />
-    
-    <item
-        android:id="@+id/action_ThemeOverlayActionBar"
-        android:orderInCategory="100"
-        android2:showAsAction="never"
-        android:title="@string/action_ThemeOverlayActionBar" />
+        android:title="@string/overlayActionBar" />
     
 </menu>

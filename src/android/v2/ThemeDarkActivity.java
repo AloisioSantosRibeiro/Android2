@@ -52,20 +52,20 @@ public class ThemeDarkActivity extends ActionBarActivity {
 				//
 				NavUtils.navigateUpFromSameTask(this);
 				return true;
-	    	case R.id.action_ThemeDark:
+	    	case R.id.action_ThemesAndroid:
 	    		tools.MenuFunctions.fOpenDarkThemeActivity(this);
 	    		return true;
-	    	case R.id.action_ThemeLight:
-	    		tools.MenuFunctions.fOpenLightThemeActivity(this);
+	    	case R.id.action_ThemesColoredTitles:
+	    		//tools.MenuFunctions.fOpenThemeColorTitleGreenActivity(this);
 	    		return true;
-	    	case R.id.action_ThemeDarkLight:
-	    		tools.MenuFunctions.fOpenDarkLightThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemeColor:
-	    		tools.MenuFunctions.fOpenColorThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemeImage:
+	    	case R.id.action_ThemesImage:
 	    		tools.MenuFunctions.fOpenImageThemeActivity(this);
+	    		return true;
+	    	case R.id.action_ThemesHideActionBar:
+	    		//tools.MenuFunctions.fOpenThemeHideActionBarActivity(this);
+	    		return true;
+	    	case R.id.action_ThemesOverlayActionBar:
+	    		tools.MenuFunctions.fOpenOverlayActionBarThemeActivity(this);
 	    		return true;
 	    	default:
 	    		return super.onOptionsItemSelected(item);
@@ -73,23 +73,14 @@ public class ThemeDarkActivity extends ActionBarActivity {
 //		return super.onOptionsItemSelected(item);
 	}
 
-	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
-	public void fHideActionBar(View button_hideActionBar) {
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-			getActionBar().hide();
-		}
-		else {
-			getSupportActionBar().hide();
-		}
+	
+	public void fOpenLightThemeActivity(View view) {
+		tools.MenuFunctions.fOpenLightThemeActivity(this);
+	}
+
+	
+	public void fOpenDarkLightThemeActivity(View view) {
+		tools.MenuFunctions.fOpenDarkLightThemeActivity(this);
 	}
 	
-	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
-	public void fShowActionBar(View button_showActionBar) {
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-			getActionBar().show();
-		}
-		else {
-			getSupportActionBar().show();
-		}
-	}
 }

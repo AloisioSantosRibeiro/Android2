@@ -42,23 +42,21 @@ public class MainActivity extends ActionBarActivity {
     		case R.id.action_help:
 //    			fOpenHelp();
     			return true;
-    		case R.id.action_ThemeDark:
-    			tools.MenuFunctions.fOpenDarkThemeActivity(this);
-    			return true;
-    		case R.id.action_ThemeLight:
+    		case R.id.action_ThemesAndroid:
     			tools.MenuFunctions.fOpenLightThemeActivity(this);
     			return true;
-    		case R.id.action_ThemeDarkLight:
-    			tools.MenuFunctions.fOpenDarkLightThemeActivity(this);
+    		case R.id.action_ThemesColoredTitles:
+    			//tools.MenuFunctions.fOpenThemeColorTitleBlueActivity(this);
     			return true;
-    		case R.id.action_ThemeColor:
-    			tools.MenuFunctions.fOpenColorThemeActivity(this);
+    		case R.id.action_ThemesImage:
+    			//tools.MenuFunctions.fOpenThemeImageActivity(this);
     			return true;
-    		case R.id.action_ThemeImage:
-    			tools.MenuFunctions.fOpenImageThemeActivity(this);
+    		case R.id.action_ThemesHideActionBar:
+    			//tools.MenuFunctions.fOpenColorThemeHideActionBarActivity(this);
     			return true;
-    		case R.id.action_ThemeOverlayActionBar:
+    		case R.id.action_ThemesOverlayActionBar:
     			tools.MenuFunctions.fOpenOverlayActionBarThemeActivity(this);
+    			return true;
     		default:
     			return super.onOptionsItemSelected(item);
     	}

@@ -1194,6 +1194,11 @@ containing a value of this type.
         public static final int action_ThemeDarkLight=0x7f050051;
         public static final int action_ThemeImage=0x7f050053;
         public static final int action_ThemeLight=0x7f050050;
+        public static final int action_ThemesAndroid=0x7f050054;
+        public static final int action_ThemesColoredTitles=0x7f050055;
+        public static final int action_ThemesHideActionBar=0x7f050057;
+        public static final int action_ThemesImage=0x7f050056;
+        public static final int action_ThemesOverlayActionBar=0x7f050058;
         public static final int action_bar=0x7f05002d;
         public static final int action_bar_activity_content=0x7f050026;
         public static final int action_bar_container=0x7f05002c;
@@ -1206,6 +1211,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050027;
         public static final int action_menu_presenter=0x7f050028;
         public static final int action_mode_close_button=0x7f050035;
+        public static final int action_settings=0x7f050059;
         public static final int activity_chooser_view_content=0x7f050036;
         public static final int alignBounds=0x7f050002;
         public static final int alignMargins=0x7f050003;
@@ -1330,7 +1336,8 @@ containing a value of this type.
         public static final int activity_theme_dark_light=0x7f03001b;
         public static final int activity_theme_image=0x7f03001c;
         public static final int activity_theme_light=0x7f03001d;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
+        public static final int activity_theme_overlay_action_bar=0x7f03001e;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
     }
     public static final class menu {
         public static final int menu_display_message=0x7f0c0000;
@@ -1340,6 +1347,7 @@ containing a value of this type.
         public static final int menu_theme_dark_light=0x7f0c0004;
         public static final int menu_theme_image=0x7f0c0005;
         public static final int menu_theme_light=0x7f0c0006;
+        public static final int theme_overlay_action_bar=0x7f0c0007;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1382,24 +1390,40 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
-        public static final int action_ThemeColor=0x7f0a0012;
-        public static final int action_ThemeDark=0x7f0a000f;
-        public static final int action_ThemeDarkLight=0x7f0a0011;
-        public static final int action_ThemeImage=0x7f0a0013;
-        public static final int action_ThemeLight=0x7f0a0010;
+        public static final int action_ThemeColor=0x7f0a0022;
+        public static final int action_ThemeDark=0x7f0a001f;
+        public static final int action_ThemeDarkLight=0x7f0a0021;
+        public static final int action_ThemeImage=0x7f0a0023;
+        public static final int action_ThemeLight=0x7f0a0020;
+        public static final int action_ThemeOverlayActionBar=0x7f0a0024;
         public static final int action_help=0x7f0a000e;
-        public static final int action_settings=0x7f0a0019;
+        public static final int action_settings=0x7f0a000f;
+        public static final int androidThemes=0x7f0a0010;
         public static final int app_name=0x7f0a000d;
-        public static final int button_send=0x7f0a0016;
-        public static final int edit_message=0x7f0a0015;
-        public static final int hello_android=0x7f0a0014;
-        public static final int hello_world=0x7f0a001a;
-        public static final int title_activity_display_message=0x7f0a0017;
-        public static final int title_activity_theme_color=0x7f0a001d;
-        public static final int title_activity_theme_dark=0x7f0a0018;
-        public static final int title_activity_theme_dark_light=0x7f0a001c;
-        public static final int title_activity_theme_image=0x7f0a001e;
-        public static final int title_activity_theme_light=0x7f0a001b;
+        public static final int blueTitle=0x7f0a0017;
+        public static final int button_hideActionBar=0x7f0a0027;
+        public static final int button_send=0x7f0a001a;
+        public static final int button_showActionBar=0x7f0a0028;
+        public static final int coloredTitles=0x7f0a0014;
+        public static final int darkLightTheme=0x7f0a0013;
+        public static final int darkTheme=0x7f0a0011;
+        public static final int edit_message=0x7f0a0019;
+        public static final int greenTitle=0x7f0a0016;
+        public static final int hello_android=0x7f0a0025;
+        public static final int hello_world=0x7f0a0026;
+        public static final int hideActionBar=0x7f0a001c;
+        public static final int imageThemes=0x7f0a0018;
+        public static final int lightTheme=0x7f0a0012;
+        public static final int overlayActionBar=0x7f0a001b;
+        public static final int redTitle=0x7f0a0015;
+        public static final int showActionBar=0x7f0a001d;
+        public static final int title_activity_display_message=0x7f0a001e;
+        public static final int title_activity_theme_color=0x7f0a002c;
+        public static final int title_activity_theme_dark=0x7f0a0029;
+        public static final int title_activity_theme_dark_light=0x7f0a002b;
+        public static final int title_activity_theme_image=0x7f0a002d;
+        public static final int title_activity_theme_light=0x7f0a002a;
+        public static final int title_activity_theme_overlay_action_bar=0x7f0a002e;
     }
     public static final class style {
         /**  ActionBar styles 
@@ -1438,6 +1462,10 @@ containing a value of this type.
     <item name="actionMenuTextColor">@color/actionbar_text</item>    
          */
         public static final int CustomActionBarTheme2=0x7f0b0087;
+        /**  the 3rd theme applied to the application or activity 
+ the theme applied to the application or activity 
+         */
+        public static final int CustomActionBarThemeOverlay=0x7f0b008b;
         /**  ActionBar styles 
          */
         public static final int MyActionBar=0x7f0b0088;
