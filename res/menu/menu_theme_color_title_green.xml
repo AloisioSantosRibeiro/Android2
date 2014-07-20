@@ -3,39 +3,39 @@
 
     <item
         android:id="@+id/action_help"
-        android:icon="@drawable/ic_action_light_help"
+        android:icon="@drawable/ic_action_dark_help"
         android:orderInCategory="100"
         android2:showAsAction="ifRoom"
         android:title="@string/action_help" />
 
     <item
-        android:id="@+id/action_ThemeDark"
+        android:id="@+id/action_ThemesAndroid"
         android:orderInCategory="100"
         android2:showAsAction="never"
-        android:title="@string/action_ThemeDark" />
+        android:title="@string/androidThemes" />
     
     <item
-        android:id="@+id/action_ThemeLight"
+        android:id="@+id/action_ThemesColoredTitles"
         android:orderInCategory="100"
         android2:showAsAction="never"
-        android:title="@string/action_ThemeLight" />
+        android:title="@string/coloredTitles" />
     
     <item
-        android:id="@+id/action_ThemeDarkLight"
+        android:id="@+id/action_ThemesImage"
         android:orderInCategory="100"
         android2:showAsAction="never"
-        android:title="@string/action_ThemeDarkLight" />
+        android:title="@string/imageThemes" />
     
     <item
         android:id="@+id/action_ThemeColor"
         android:orderInCategory="100"
         android2:showAsAction="never"
-        android:title="@string/action_ThemeColor" />
+        android:title="@string/hideActionBar" />
     
     <item
         android:id="@+id/action_ThemeImage"
         android:orderInCategory="100"
         android2:showAsAction="never"
-        android:title="@string/action_ThemeImage" />
+        android:title="@string/overlayActionBar" />
 
 </menu>

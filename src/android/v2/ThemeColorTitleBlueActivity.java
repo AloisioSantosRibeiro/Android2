@@ -9,16 +9,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class ThemeLightActivity extends ActionBarActivity {
+public class ThemeColorTitleBlueActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_theme_light);
+		setContentView(R.layout.activity_theme_color_title_blue);
 		// Show the Up button in the action bar.
 		setupActionBar();
 	}
 
+	
 	/**
 	 * Set up the {@link android.app.ActionBar}, if the API is available.
 	 */
@@ -32,13 +33,15 @@ public class ThemeLightActivity extends ActionBarActivity {
 		}
 	}
 
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_theme_light, menu);
+		getMenuInflater().inflate(R.menu.menu_theme_color_title_blue, menu);
 		return true;
 	}
 
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
@@ -52,15 +55,15 @@ public class ThemeLightActivity extends ActionBarActivity {
 				//
 				NavUtils.navigateUpFromSameTask(this);
 				return true;
-	    	case R.id.action_ThemesAndroid:
-	    		tools.MenuFunctions.fOpenLightThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemesColoredTitles:
-	    		tools.MenuFunctions.fOpenColoredTitleBlueThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemesImage:
-	    		//tools.MenuFunctions.fOpenThemeImageActivity(this);
-	    		return true;
+			case R.id.action_ThemesAndroid:
+				tools.MenuFunctions.fOpenLightThemeActivity(this);
+				return true;
+			case R.id.action_ThemesColoredTitles:
+				tools.MenuFunctions.fOpenColoredTitleBlueThemeActivity(this);
+				return true;
+			case R.id.action_ThemesImage:
+				tools.MenuFunctions.fOpenImageThemeActivity(this);
+				return true;
 	    	case R.id.action_ThemesHideActionBar:
 	    		//tools.MenuFunctions.fOpenThemeHideActionBarActivity(this);
 	    		return true;
@@ -70,16 +73,15 @@ public class ThemeLightActivity extends ActionBarActivity {
 	    	default:
 	    		return super.onOptionsItemSelected(item);
 		}
-//		return super.onOptionsItemSelected(item);
 	}
 
 	
-	public void fOpenDarkThemeActivity(View view) {
-		tools.MenuFunctions.fOpenDarkThemeActivity(this);
+	public void fOpenColorTitleGreenTheme(View view) {
+		tools.MenuFunctions.fOpenColoredTitleGreenThemeActivity(this);
 	}
-
 	
-	public void fOpenDarkLightThemeActivity(View view) {
-		tools.MenuFunctions.fOpenDarkLightThemeActivity(this);
+	
+	public void fOpenColorTitleRedTheme(View view) {
+		tools.MenuFunctions.fOpenColoredTitleRedThemeActivity(this);
 	}
 }

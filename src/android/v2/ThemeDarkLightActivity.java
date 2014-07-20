@@ -56,7 +56,7 @@ public class ThemeDarkLightActivity extends ActionBarActivity {
 	    		tools.MenuFunctions.fOpenDarkLightThemeActivity(this);
 	    		return true;
 	    	case R.id.action_ThemesColoredTitles:
-	    		//tools.MenuFunctions.fOpenThemeColoredTitlesActivity(this);
+	    		tools.MenuFunctions.fOpenColoredTitleRedThemeActivity(this);
 	    		return true;
 	    	case R.id.action_ThemesImage:
 	    		//tools.MenuFunctions.fOpenThemeImageActivity(this);
@@ -70,7 +70,6 @@ public class ThemeDarkLightActivity extends ActionBarActivity {
 	    	default:
 	    		return super.onOptionsItemSelected(item);
 		}
-//		return super.onOptionsItemSelected(item);
 	}
 
 

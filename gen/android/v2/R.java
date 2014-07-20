@@ -1331,23 +1331,27 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030016;
         public static final int activity_display_message=0x7f030017;
         public static final int activity_main=0x7f030018;
-        public static final int activity_theme_color=0x7f030019;
-        public static final int activity_theme_dark=0x7f03001a;
-        public static final int activity_theme_dark_light=0x7f03001b;
-        public static final int activity_theme_image=0x7f03001c;
-        public static final int activity_theme_light=0x7f03001d;
-        public static final int activity_theme_overlay_action_bar=0x7f03001e;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
+        public static final int activity_theme_color_title_blue=0x7f030019;
+        public static final int activity_theme_color_title_green=0x7f03001a;
+        public static final int activity_theme_color_title_red=0x7f03001b;
+        public static final int activity_theme_dark=0x7f03001c;
+        public static final int activity_theme_dark_light=0x7f03001d;
+        public static final int activity_theme_image=0x7f03001e;
+        public static final int activity_theme_light=0x7f03001f;
+        public static final int activity_theme_overlay_action_bar=0x7f030020;
+        public static final int support_simple_spinner_dropdown_item=0x7f030021;
     }
     public static final class menu {
         public static final int menu_display_message=0x7f0c0000;
         public static final int menu_main=0x7f0c0001;
-        public static final int menu_theme_color=0x7f0c0002;
-        public static final int menu_theme_dark=0x7f0c0003;
-        public static final int menu_theme_dark_light=0x7f0c0004;
-        public static final int menu_theme_image=0x7f0c0005;
-        public static final int menu_theme_light=0x7f0c0006;
-        public static final int theme_overlay_action_bar=0x7f0c0007;
+        public static final int menu_theme_color_title_blue=0x7f0c0002;
+        public static final int menu_theme_color_title_green=0x7f0c0003;
+        public static final int menu_theme_color_title_red=0x7f0c0004;
+        public static final int menu_theme_dark=0x7f0c0005;
+        public static final int menu_theme_dark_light=0x7f0c0006;
+        public static final int menu_theme_image=0x7f0c0007;
+        public static final int menu_theme_light=0x7f0c0008;
+        public static final int theme_overlay_action_bar=0x7f0c0009;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1419,6 +1423,8 @@ containing a value of this type.
         public static final int showActionBar=0x7f0a001d;
         public static final int title_activity_display_message=0x7f0a001e;
         public static final int title_activity_theme_color=0x7f0a002c;
+        public static final int title_activity_theme_color_title_blue=0x7f0a002f;
+        public static final int title_activity_theme_color_title_red=0x7f0a0030;
         public static final int title_activity_theme_dark=0x7f0a0029;
         public static final int title_activity_theme_dark_light=0x7f0a002b;
         public static final int title_activity_theme_image=0x7f0a002d;
@@ -1458,25 +1464,55 @@ containing a value of this type.
         /**  the theme applied to the application or activity 
          */
         public static final int CustomActionBarTheme=0x7f0b0085;
-        /**  the 2nd theme applied to the application or activity 
-    <item name="actionMenuTextColor">@color/actionbar_text</item>    
-         */
-        public static final int CustomActionBarTheme2=0x7f0b0087;
         /**  the 3rd theme applied to the application or activity 
  the theme applied to the application or activity 
          */
-        public static final int CustomActionBarThemeOverlay=0x7f0b008b;
+        public static final int CustomActionBarThemeOverlay=0x7f0b0093;
+        /**  the BlueTitleText theme applied to the application or activity 
+    <item name="actionMenuTextColor">@color/actionbar_text</item>    
+         */
+        public static final int CustomActionBarThemeTitleBlue=0x7f0b0087;
+        /**  the GreenTitleText theme applied to the application or activity 
+    <item name="actionMenuTextColor">@color/actionbar_text</item>    
+         */
+        public static final int CustomActionBarThemeTitleGreen=0x7f0b008b;
+        /**  the RedTitleText theme applied to the application or activity 
+    <item name="actionMenuTextColor">@color/actionbar_text</item>    
+         */
+        public static final int CustomActionBarThemeTitleRed=0x7f0b008f;
         /**  ActionBar styles 
          */
-        public static final int MyActionBar=0x7f0b0088;
+        public static final int MyActionBarBlue=0x7f0b0088;
+        /**  ActionBar styles 
+         */
+        public static final int MyActionBarGreen=0x7f0b008c;
+        /**  ActionBar styles 
+         */
+        public static final int MyActionBarRed=0x7f0b0090;
         /**  ActionBar tabs text 
  The textColor property is backward compatible with the Support Library 
          */
-        public static final int MyActionBarTabText=0x7f0b008a;
+        public static final int MyActionBarTabTextBlue=0x7f0b008a;
+        /**  ActionBar tabs text 
+ The textColor property is backward compatible with the Support Library 
+         */
+        public static final int MyActionBarTabTextGreen=0x7f0b008e;
+        /**  ActionBar tabs text 
+ The textColor property is backward compatible with the Support Library 
+         */
+        public static final int MyActionBarTabTextRed=0x7f0b0092;
         /**  ActionBar title text 
  The textColor property is backward compatible with the Support Library 
          */
-        public static final int MyActionBarTitleText=0x7f0b0089;
+        public static final int MyActionBarTitleTextBlue=0x7f0b0089;
+        /**  ActionBar title text 
+ The textColor property is backward compatible with the Support Library 
+         */
+        public static final int MyActionBarTitleTextGreen=0x7f0b008d;
+        /**  ActionBar title text 
+ The textColor property is backward compatible with the Support Library 
+         */
+        public static final int MyActionBarTitleTextRed=0x7f0b0091;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f0b0063;

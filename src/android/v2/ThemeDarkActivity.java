@@ -19,6 +19,7 @@ public class ThemeDarkActivity extends ActionBarActivity {
 		setupActionBar();
 	}
 
+	
 	/**
 	 * Set up the {@link android.app.ActionBar}, if the API is available.
 	 */
@@ -32,6 +33,7 @@ public class ThemeDarkActivity extends ActionBarActivity {
 		}
 	}
 
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -39,6 +41,7 @@ public class ThemeDarkActivity extends ActionBarActivity {
 		return true;
 	}
 
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
@@ -56,7 +59,7 @@ public class ThemeDarkActivity extends ActionBarActivity {
 	    		tools.MenuFunctions.fOpenDarkThemeActivity(this);
 	    		return true;
 	    	case R.id.action_ThemesColoredTitles:
-	    		//tools.MenuFunctions.fOpenThemeColorTitleGreenActivity(this);
+	    		tools.MenuFunctions.fOpenColoredTitleGreenThemeActivity(this);
 	    		return true;
 	    	case R.id.action_ThemesImage:
 	    		tools.MenuFunctions.fOpenImageThemeActivity(this);

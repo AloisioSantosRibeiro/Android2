@@ -2,7 +2,9 @@ package tools;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.v2.ThemeColorActivity;
+import android.v2.ThemeColorTitleBlueActivity;
+import android.v2.ThemeColorTitleGreenActivity;
+import android.v2.ThemeColorTitleRedActivity;
 import android.v2.ThemeDarkActivity;
 import android.v2.ThemeDarkLightActivity;
 import android.v2.ThemeImageActivity;
@@ -30,8 +32,20 @@ public class MenuFunctions {
     }
     
     
-    public static void fOpenColorThemeActivity(Activity origin) {
-    	Intent intent = new Intent(origin, ThemeColorActivity.class);
+    public static void fOpenColoredTitleBlueThemeActivity(Activity origin) {
+    	Intent intent = new Intent(origin, ThemeColorTitleBlueActivity.class);
+    	origin.startActivity(intent);
+    }
+    
+    
+    public static void fOpenColoredTitleGreenThemeActivity(Activity origin) {
+    	Intent intent = new Intent(origin, ThemeColorTitleGreenActivity.class);
+    	origin.startActivity(intent);
+    }
+    
+    
+    public static void fOpenColoredTitleRedThemeActivity(Activity origin) {
+    	Intent intent = new Intent(origin, ThemeColorTitleRedActivity.class);
     	origin.startActivity(intent);
     }
     
