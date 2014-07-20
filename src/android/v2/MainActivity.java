@@ -49,7 +49,7 @@ public class MainActivity extends ActionBarActivity {
     			tools.MenuFunctions.fOpenColoredTitleBlueThemeActivity(this);
     			return true;
     		case R.id.action_ThemesImage:
-    			//tools.MenuFunctions.fOpenThemeImageActivity(this);
+    			tools.MenuFunctions.fOpenImageThemeActivity(this);
     			return true;
     		case R.id.action_ThemesHideActionBar:
     			//tools.MenuFunctions.fOpenColorThemeHideActionBarActivity(this);

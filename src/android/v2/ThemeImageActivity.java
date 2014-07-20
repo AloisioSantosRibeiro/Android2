@@ -51,25 +51,24 @@ public class ThemeImageActivity extends ActionBarActivity {
 				//
 				NavUtils.navigateUpFromSameTask(this);
 				return true;
-	    	case R.id.action_ThemeDark:
-	    		tools.MenuFunctions.fOpenDarkThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemeLight:
+	    	case R.id.action_ThemesAndroid:
 	    		tools.MenuFunctions.fOpenLightThemeActivity(this);
 	    		return true;
-	    	case R.id.action_ThemeDarkLight:
-	    		tools.MenuFunctions.fOpenDarkLightThemeActivity(this);
+	    	case R.id.action_ThemesColoredTitles:
+	    		tools.MenuFunctions.fOpenColoredTitleBlueThemeActivity(this);
 	    		return true;
-//	    	case R.id.action_ThemeColor:
-//	    		tools.MenuFunctions.fOpenColorThemeActivity(this);
-//	    		return true;
-	    	case R.id.action_ThemeImage:
+	    	case R.id.action_ThemesImage:
 	    		tools.MenuFunctions.fOpenImageThemeActivity(this);
+	    		return true;
+	    	case R.id.action_ThemesHideActionBar:
+//	    		tools.MenuFunctions.fOpenThemeHideActionBarActivity(this);
+	    		return true;
+	    	case R.id.action_ThemesOverlayActionBar:
+	    		tools.MenuFunctions.fOpenOverlayActionBarThemeActivity(this);
 	    		return true;
 	    	default:
 	    		return super.onOptionsItemSelected(item);
 		}
-//		return super.onOptionsItemSelected(item);
 	}
 
 }

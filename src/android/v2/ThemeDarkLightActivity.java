@@ -59,7 +59,7 @@ public class ThemeDarkLightActivity extends ActionBarActivity {
 	    		tools.MenuFunctions.fOpenColoredTitleRedThemeActivity(this);
 	    		return true;
 	    	case R.id.action_ThemesImage:
-	    		//tools.MenuFunctions.fOpenThemeImageActivity(this);
+	    		tools.MenuFunctions.fOpenImageThemeActivity(this);
 	    		return true;
 	    	case R.id.action_ThemesHideActionBar:
 	    		//tools.MenuFunctions.fOpenThemeHideActionBarActivity(this);
