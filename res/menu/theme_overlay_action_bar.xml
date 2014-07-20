@@ -1,9 +1,41 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:android2="http://schemas.android.com/apk/res-auto" >
 
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_help"
+        android:icon="@drawable/ic_action_dark_help"
         android:orderInCategory="100"
-        android:showAsAction="never"
-        android:title="@string/action_settings"/>
+        android2:showAsAction="ifRoom"
+        android:title="@string/action_help" />
 
+    <item
+        android:id="@+id/action_ThemesAndroid"
+        android:orderInCategory="100"
+        android2:showAsAction="never"
+        android:title="@string/androidThemes" />
+    
+    <item
+        android:id="@+id/action_ThemesColoredTitles"
+        android:orderInCategory="100"
+        android2:showAsAction="never"
+        android:title="@string/coloredTitles" />
+    
+    <item
+        android:id="@+id/action_ThemesImage"
+        android:orderInCategory="100"
+        android2:showAsAction="never"
+        android:title="@string/imageThemes" />
+    
+    <item
+        android:id="@+id/action_ThemesHideActionBar"
+        android:orderInCategory="100"
+        android2:showAsAction="never"
+        android:title="@string/hideActionBar" />
+    
+    <item
+        android:id="@+id/action_ThemesOverlayActionBar"
+        android:orderInCategory="100"
+        android2:showAsAction="never"
+        android:title="@string/overlayActionBar" />
+    
 </menu>

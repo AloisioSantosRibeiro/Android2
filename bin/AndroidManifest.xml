@@ -95,7 +95,7 @@
         </activity>
         <activity
             android:name="android.v2.ThemeOverlayActionBarActivity"
-            android:label="@string/title_activity_theme_overlay_action_bar"
+            android:label="@string/overlayActionBar"
             android:parentActivityName="android.v2.MainActivity"
             android:theme="@style/CustomActionBarThemeOverlay" >
             <meta-data

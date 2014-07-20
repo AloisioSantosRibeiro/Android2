@@ -19,6 +19,7 @@ public class ThemeOverlayActionBarActivity extends ActionBarActivity {
 		setupActionBar();
 	}
 
+	
 	/**
 	 * Set up the {@link android.app.ActionBar}, if the API is available.
 	 */
@@ -32,6 +33,7 @@ public class ThemeOverlayActionBarActivity extends ActionBarActivity {
 		}
 	}
 
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -39,23 +41,34 @@ public class ThemeOverlayActionBarActivity extends ActionBarActivity {
 		return true;
 	}
 
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-		case android.R.id.home:
-			// This ID represents the Home or Up button. In the case of this
-			// activity, the Up button is shown. Use NavUtils to allow users
-			// to navigate up one level in the application structure. For
-			// more details, see the Navigation pattern on Android Design:
-			//
-			// http://developer.android.com/design/patterns/navigation.html#up-vs-back
-			//
-			NavUtils.navigateUpFromSameTask(this);
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
+    	switch(item.getItemId()) {
+			case R.id.action_help:
+//				fOpenHelp();
+				return true;
+			case R.id.action_ThemesAndroid:
+				tools.MenuFunctions.fOpenLightThemeActivity(this);
+				return true;
+			case R.id.action_ThemesColoredTitles:
+				tools.MenuFunctions.fOpenColoredTitleBlueThemeActivity(this);
+				return true;
+			case R.id.action_ThemesImage:
+				tools.MenuFunctions.fOpenImageThemeActivity(this);
+				return true;
+			case R.id.action_ThemesHideActionBar:
+				//tools.MenuFunctions.fOpenColorThemeHideActionBarActivity(this);
+				return true;
+			case R.id.action_ThemesOverlayActionBar:
+				tools.MenuFunctions.fOpenOverlayActionBarThemeActivity(this);
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
+    	}
 	}
 
+	
 	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 	public void fHideActionBar(View button_hideActionBar) {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
@@ -65,6 +78,7 @@ public class ThemeOverlayActionBarActivity extends ActionBarActivity {
 			getSupportActionBar().hide();
 		}
 	}
+
 	
 	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 	public void fShowActionBar(View button_showActionBar) {

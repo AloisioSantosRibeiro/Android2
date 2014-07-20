@@ -27,13 +27,13 @@
         android:title="@string/imageThemes" />
 
     <item
-        android:id="@+id/action_ThemeColor"
+        android:id="@+id/action_ThemesHideActionBar"
         android:orderInCategory="100"
         android2:showAsAction="never"
         android:title="@string/hideActionBar" />
     
     <item
-        android:id="@+id/action_ThemeImage"
+        android:id="@+id/action_ThemesOverlayActionBar"
         android:orderInCategory="100"
         android2:showAsAction="never"
         android:title="@string/overlayActionBar" />
