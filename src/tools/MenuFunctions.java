@@ -7,6 +7,7 @@ import android.v2.ThemeColorTitleGreenActivity;
 import android.v2.ThemeColorTitleRedActivity;
 import android.v2.ThemeDarkActivity;
 import android.v2.ThemeDarkLightActivity;
+import android.v2.ThemeHideActionBarActivity;
 import android.v2.ThemeImageActivity;
 import android.v2.ThemeLightActivity;
 import android.v2.ThemeOverlayActionBarActivity;
@@ -54,6 +55,12 @@ public class MenuFunctions {
     	Intent intent = new Intent(origin, ThemeImageActivity.class);
     	origin.startActivity(intent);
     }
+
+
+    public static void fOpenHideActionBarThemeActivity(Activity origin) {
+    	Intent intent = new Intent(origin, ThemeHideActionBarActivity.class);
+    	origin.startActivity(intent);
+	}
 
 
     public static void fOpenOverlayActionBarThemeActivity(Activity origin) {

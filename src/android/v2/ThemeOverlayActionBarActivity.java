@@ -58,7 +58,7 @@ public class ThemeOverlayActionBarActivity extends ActionBarActivity {
 				tools.MenuFunctions.fOpenImageThemeActivity(this);
 				return true;
 			case R.id.action_ThemesHideActionBar:
-				//tools.MenuFunctions.fOpenColorThemeHideActionBarActivity(this);
+    			tools.MenuFunctions.fOpenHideActionBarThemeActivity(this);
 				return true;
 			case R.id.action_ThemesOverlayActionBar:
 				tools.MenuFunctions.fOpenOverlayActionBarThemeActivity(this);

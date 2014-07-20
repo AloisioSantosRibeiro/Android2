@@ -9,13 +9,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class ThemeColorTitleGreenActivity extends ActionBarActivity {
+public class ThemeHideActionBarActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_theme_color_title_green);
-		// Show the Up button in the action bar.
+		setContentView(R.layout.activity_theme_hide_action_bar);
+		// Set up the action bar.
 		setupActionBar();
 	}
 
@@ -37,7 +37,7 @@ public class ThemeColorTitleGreenActivity extends ActionBarActivity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_theme_color_title_green, menu);
+		getMenuInflater().inflate(R.menu.theme_hide_action_bar, menu);
 		return true;
 	}
 
@@ -74,14 +74,27 @@ public class ThemeColorTitleGreenActivity extends ActionBarActivity {
 	    		return super.onOptionsItemSelected(item);
 		}
 	}
+	
+
+	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
+	public void fHideActionBar(View button_hideActionBar) {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+			getActionBar().hide();
+		}
+		else {
+			getSupportActionBar().hide();
+		}
+	}
 
 	
-	public void fOpenColorTitleBlueTheme(View view) {
-		tools.MenuFunctions.fOpenColoredTitleBlueThemeActivity(this);
+	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
+	public void fShowActionBar(View button_showActionBar) {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+			getActionBar().show();
+		}
+		else {
+			getSupportActionBar().show();
+		}
 	}
-	
-	
-	public void fOpenColorTitleRedTheme(View view) {
-		tools.MenuFunctions.fOpenColoredTitleRedThemeActivity(this);
-	}
+
 }

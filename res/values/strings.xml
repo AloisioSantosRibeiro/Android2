@@ -37,5 +37,6 @@
     <string name="title_activity_theme_overlay_action_bar">ThemeOverlayActionBarActivity</string>
     <string name="title_activity_theme_color_title_blue">Colored Title</string>
     <string name="title_activity_theme_color_title_red">ThemeColorTitleRedActivity</string>
+    <string name="title_activity_theme_hide_action_bar">ThemeHideActionBarActivity</string>
 
 </resources>

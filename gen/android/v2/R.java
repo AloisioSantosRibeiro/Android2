@@ -1335,10 +1335,11 @@ containing a value of this type.
         public static final int activity_theme_color_title_red=0x7f03001b;
         public static final int activity_theme_dark=0x7f03001c;
         public static final int activity_theme_dark_light=0x7f03001d;
-        public static final int activity_theme_image=0x7f03001e;
-        public static final int activity_theme_light=0x7f03001f;
-        public static final int activity_theme_overlay_action_bar=0x7f030020;
-        public static final int support_simple_spinner_dropdown_item=0x7f030021;
+        public static final int activity_theme_hide_action_bar=0x7f03001e;
+        public static final int activity_theme_image=0x7f03001f;
+        public static final int activity_theme_light=0x7f030020;
+        public static final int activity_theme_overlay_action_bar=0x7f030021;
+        public static final int support_simple_spinner_dropdown_item=0x7f030022;
     }
     public static final class menu {
         public static final int menu_display_message=0x7f0c0000;
@@ -1350,7 +1351,8 @@ containing a value of this type.
         public static final int menu_theme_dark_light=0x7f0c0006;
         public static final int menu_theme_image=0x7f0c0007;
         public static final int menu_theme_light=0x7f0c0008;
-        public static final int theme_overlay_action_bar=0x7f0c0009;
+        public static final int theme_hide_action_bar=0x7f0c0009;
+        public static final int theme_overlay_action_bar=0x7f0c000a;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1426,6 +1428,7 @@ containing a value of this type.
         public static final int title_activity_theme_color_title_red=0x7f0a0030;
         public static final int title_activity_theme_dark=0x7f0a0029;
         public static final int title_activity_theme_dark_light=0x7f0a002b;
+        public static final int title_activity_theme_hide_action_bar=0x7f0a0031;
         public static final int title_activity_theme_image=0x7f0a002d;
         public static final int title_activity_theme_light=0x7f0a002a;
         public static final int title_activity_theme_overlay_action_bar=0x7f0a002e;
