@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android2</string>
+    <string name="action_help">Ajuda</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="androidThemes">Temas Android</string>
+    <string name="darkTheme">Tema Dark</string>
+    <string name="lightTheme">Tema Light</string>
+    <string name="darkLightTheme">Tema Light e Dark Bar</string>
+
+    <string name="coloredTitles">Titulos Coloridos</string>
+    <string name="redTitle">Titulo vermelho</string>
+    <string name="greenTitle">Titulo verde</string>
+    <string name="blueTitle">Titulo azul</string>
+
+    <string name="imageThemes">Tema Imagens</string>
+
+    <string name="edit_message">Digite uma mensagem</string>
+    <string name="button_send">Enviar</string>
+
+    <string name="overlayActionBar">Overlay ActionBar</string>
+    <string name="hideActionBar">Ocultar ActionBar</string>
+    <string name="showActionBar">Exibir ActionBar</string>
+
+    <string name="title_activity_display_message">Display Message</string>
+
+</resources>

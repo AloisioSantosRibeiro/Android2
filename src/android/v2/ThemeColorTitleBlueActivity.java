@@ -8,6 +8,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class ThemeColorTitleBlueActivity extends ActionBarActivity {
 
@@ -55,6 +56,9 @@ public class ThemeColorTitleBlueActivity extends ActionBarActivity {
 				//
 				NavUtils.navigateUpFromSameTask(this);
 				return true;
+    		case R.id.action_help:
+	    		Toast.makeText(ThemeColorTitleBlueActivity.this, R.string.action_help, Toast.LENGTH_SHORT).show();
+	    		return true;
 			case R.id.action_ThemesAndroid:
 				tools.MenuFunctions.fOpenLightThemeActivity(this);
 				return true;

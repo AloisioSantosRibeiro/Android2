@@ -9,6 +9,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class DisplayMessageActivity extends ActionBarActivity {
 
@@ -69,26 +70,26 @@ public class DisplayMessageActivity extends ActionBarActivity {
 				//
 				NavUtils.navigateUpFromSameTask(this);
 				return true;
-			case R.id.action_help:
-				// fOpenHelp();
-				return true;
-			case R.id.action_ThemeDark:
-				tools.MenuFunctions.fOpenDarkThemeActivity(this);
-				return true;
-			case R.id.action_ThemeLight:
-				tools.MenuFunctions.fOpenLightThemeActivity(this);
-				return true;
-			case R.id.action_ThemeDarkLight:
-				tools.MenuFunctions.fOpenDarkLightThemeActivity(this);
-				return true;
-//			case R.id.action_ThemeColor:
-//				tools.MenuFunctions.fOpenColorThemeActivity(this);
-//				return true;
-			case R.id.action_ThemeImage:
-				tools.MenuFunctions.fOpenImageThemeActivity(this);
-				return true;
-			default:
-				return super.onOptionsItemSelected(item);
+    		case R.id.action_help:
+	    		Toast.makeText(DisplayMessageActivity.this, R.string.action_help, Toast.LENGTH_SHORT).show();
+    			return true;
+    		case R.id.action_ThemesAndroid:
+    			tools.MenuFunctions.fOpenLightThemeActivity(this);
+    			return true;
+    		case R.id.action_ThemesColoredTitles:
+    			tools.MenuFunctions.fOpenColoredTitleBlueThemeActivity(this);
+    			return true;
+    		case R.id.action_ThemesImage:
+    			tools.MenuFunctions.fOpenImageThemeActivity(this);
+    			return true;
+    		case R.id.action_ThemesHideActionBar:
+    			tools.MenuFunctions.fOpenHideActionBarThemeActivity(this);
+    			return true;
+    		case R.id.action_ThemesOverlayActionBar:
+    			tools.MenuFunctions.fOpenOverlayActionBarThemeActivity(this);
+    			return true;
+    		default:
+    			return super.onOptionsItemSelected(item);
 		}
 	}
 

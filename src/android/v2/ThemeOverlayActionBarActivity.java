@@ -3,11 +3,11 @@ package android.v2;
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class ThemeOverlayActionBarActivity extends ActionBarActivity {
 
@@ -45,9 +45,9 @@ public class ThemeOverlayActionBarActivity extends ActionBarActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
     	switch(item.getItemId()) {
-			case R.id.action_help:
-//				fOpenHelp();
-				return true;
+    		case R.id.action_help:
+    			Toast.makeText(ThemeOverlayActionBarActivity.this, R.string.action_help, Toast.LENGTH_SHORT).show();
+    			return true;
 			case R.id.action_ThemesAndroid:
 				tools.MenuFunctions.fOpenLightThemeActivity(this);
 				return true;

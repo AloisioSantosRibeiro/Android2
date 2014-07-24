@@ -17,18 +17,18 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/action_ThemeLight"
+        android:text="@string/lightTheme"
         android:onClick="fOpenLightThemeActivity" />
     
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/action_ThemeDark"
+        android:text="@string/darkTheme"
         android:onClick="fOpenDarkThemeActivity" />
     
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/action_ThemeDarkLight" />
+        android:text="@string/darkLightTheme" />
 
 </LinearLayout>
