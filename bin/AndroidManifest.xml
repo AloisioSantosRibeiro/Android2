@@ -106,7 +106,15 @@
             android:name="android.v2.ThemeHideActionBarActivity"
             android:label="@string/hideActionBar"
             android:parentActivityName="android.v2.MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"  >
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.v2.MainActivity" />
+        </activity>
+        <activity
+            android:name="android.v2.Portrait_Landscape_Activity"
+            android:label="@string/portraitLangdscape"
+            android:parentActivityName="android.v2.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="android.v2.MainActivity" />

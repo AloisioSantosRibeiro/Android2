@@ -15,7 +15,7 @@
     <string name="greenTitle">Titulo verde</string>
     <string name="blueTitle">Titulo azul</string>
 
-    <string name="imageThemes">Tema Imagens</string>
+    <string name="imageThemes">Tema Imagem</string>
 
     <string name="edit_message">Digite uma mensagem</string>
     <string name="button_send">Enviar</string>
@@ -24,6 +24,15 @@
     <string name="hideActionBar">Ocultar ActionBar</string>
     <string name="showActionBar">Exibir ActionBar</string>
 
+    <string name="button1">1</string>
+    <string name="button2">2</string>
+    <string name="button3">3</string>
+    <string name="button4">4</string>
+    <string name="button5">5</string>
+    <string name="button6">6</string>
+
+    <string name="portraitLangdscape">Portrait-Landspace</string>
+    
     <string name="title_activity_display_message">Display Message</string>
 
 </resources>

@@ -58,6 +58,9 @@ public class MainActivity extends ActionBarActivity {
     		case R.id.action_ThemesOverlayActionBar:
     			tools.MenuFunctions.fOpenOverlayActionBarThemeActivity(this);
     			return true;
+	    	case R.id.action_Portrait_Landscape:
+	    		tools.MenuFunctions.fOpenPortraitLandscapeActivity(this);
+	    		return true;
     		default:
     			return super.onOptionsItemSelected(item);
     	}
