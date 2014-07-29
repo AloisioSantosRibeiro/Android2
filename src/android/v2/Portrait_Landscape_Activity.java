@@ -58,6 +58,9 @@ public class Portrait_Landscape_Activity extends ActionBarActivity {
     		case R.id.action_help:
 	    		Toast.makeText(Portrait_Landscape_Activity.this, R.string.action_help, Toast.LENGTH_SHORT).show();
     			return true;
+    		case R.id.action_warning:
+    			Toast.makeText(Portrait_Landscape_Activity.this, R.string.action_warning, Toast.LENGTH_LONG).show();
+    			return true;
 			default:
 				return super.onOptionsItemSelected(item);
 		}

@@ -8,4 +8,11 @@
         android2:showAsAction="ifRoom"
         android:title="@string/action_help" />
 
+    <item
+        android:id="@+id/action_warning"
+        android:icon="@drawable/ic_action_warning"
+        android:orderInCategory="100"
+        android2:showAsAction="ifRoom"
+        android:title="@string/action_warning" />
+
 </menu>
